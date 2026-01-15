@@ -1,7 +1,7 @@
 # Email Sender Application
 
 **NOTE: Most of this project has been created with generative AI**
-
+---
 A professional email sender application available in three formats:
 1. Desktop application (Windows/Mac/Linux)
 2. Web interface (PHP-based)
