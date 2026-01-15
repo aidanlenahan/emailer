@@ -8,7 +8,8 @@
     "build": "electron-builder",
     "build:win": "electron-builder --win",
     "build:mac": "electron-builder --mac",
-    "build:linux": "electron-builder --linux"
+    "build:linux": "electron-builder --linux",
+    "build:simple": "node build-simple.js"
   },
   "build": {
     "appId": "com.emailsender.pro",
@@ -22,7 +23,14 @@
       "node_modules/**/*"
     ],
     "win": {
-      "target": "nsis",
+      "target": [
+        {
+          "target": "zip",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
       "icon": "assets/icon.ico"
     },
     "mac": {
@@ -43,10 +51,11 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^28.0.0",
-    "electron-builder": "^24.9.1"
+    "electron": "^39.2.7",
+    "electron-builder": "^24.9.1",
+    "electron-packager": "^17.1.2"
   },
   "dependencies": {
-    "nodemailer": "^6.9.7"
+    "nodemailer": "^7.0.12"
   }
 }
