@@ -2,8 +2,10 @@
 
 **NOTE: Most of this project has been created with generative AI**
 
+I got this micro-project started because Gmail would send the Visual Studio Code Live Share URL so slowly, so I made a client that took raw SMTP credentials (from Gmail) and it sent within seconds. This helped a lot for developing [bucit](https://github.com/aidanlenahan/bucit), [iogame](https://github.com/aidanlenahan/iogame), and [GEM](https://github.com/aidanlenahan/gem), as all three I worked on with [someone else](https://github.com/Slopey1), which means all needed Live Share links whenever there was a collaborative session.
+
 ---
-A professional email sender application available in three formats:
+An email sender application available in three formats:
 1. Desktop application (Windows/Mac/Linux)
 2. Web interface (PHP-based)
 3. Development mode for testing
